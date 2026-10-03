@@ -6,8 +6,9 @@ include:
 
 services:
   backend:
-    build: ./ServicesBackend
-      #context: ./ServicesBackend         # carpeta donde está el Dockerfile del backend
+    build: 
+      context: ./ServicesBackend         # carpeta donde está el Dockerfile del backend
+      platforms: [linux/amd64, linux/arm64]
     restart: unless-stopped
     ports:
       - "8080:8080"
