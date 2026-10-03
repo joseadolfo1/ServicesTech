@@ -74,4 +74,5 @@ function BuscarUsuario(){
             )}
         </div>
     );
-} export default BuscarUsuario;
+} 
+export default BuscarUsuario;

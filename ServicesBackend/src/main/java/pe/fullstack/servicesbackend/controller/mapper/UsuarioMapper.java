@@ -32,4 +32,5 @@ public interface UsuarioMapper {
 
     @Mapping(target = "roles", ignore = true)
     UsuarioEntity convertFromBusiness(Usuario usuario);
+    
 }
