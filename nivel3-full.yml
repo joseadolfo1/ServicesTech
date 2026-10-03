@@ -6,7 +6,9 @@ include:
 
 services:
   frontend:
-    build: ./ServicesFrontend        # carpeta donde está el Dockerfile del frontend
+    build:        # carpeta donde está el Dockerfile del frontend
+      context: ./ServicesFrontend
+      platforms: [linux/amd64, linux/arm64]
     restart: unless-stopped
     ports:
       - "3000:80"            # nginx escucha en el 80 dentro del contenedor

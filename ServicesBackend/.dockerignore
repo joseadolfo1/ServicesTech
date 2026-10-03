@@ -1,0 +1,9 @@
+build
+bin
+out
+.gradle
+.idea
+*.iml
+*.log
+Dockerfile
+.dockerignore
